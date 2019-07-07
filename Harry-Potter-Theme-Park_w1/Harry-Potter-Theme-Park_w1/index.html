@@ -1,0 +1,246 @@
+<!--     
+    Index.html Our Home Page.
+    All links to non-implemented pages lead to the not_found.html 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><!-- HTML Meta Data -->
+        <title>Harry Potter theme park</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A Harry Potter themed park where you can experience amazing interaction with the magic world of wizardry through Virtual Reality and Augmented Reality" />
+        <meta name="keywords" content="Harry Potter, Theme Park, Wizardry, Magic, Fantasy, Virtual Reality, Augmented Reality" />
+        <meta name="author" content="UoL - Web Development Course - w1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/stylesheet_grid.css">
+    </head>
+    <body class="grid_container">
+        <header id="main_navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
+            <label id="toggle_label" for="toggle">&#9776;</label>   
+            <input type="checkbox" id="toggle" /> <!-- Toggle Button for the small screen -->
+            <nav class="grid_header_navbar"><!-- The main navigation bar. A logo linked to the index page, Links to the AR and VR attractions, anchored to their respective places, a Contact Us link and  a search bar-->
+                <figure id="fig_logo"><!-- The logo -->
+                    <a href="index.html">
+                        <img id="logo" src="images/HP_ThemePark_logo.png" alt="Harry Potter Theme Park Logo"/>
+                    </a>
+                </figure>
+                <ul id="main_navbar_ar"><!-- The AR Attractions Link -->
+                    <li><a href="Attractions.html#art_ar_attractions">AR Attractions</a></li>
+                </ul>
+                <ul id="main_navbar_vr"><!-- The VR Attractions Link -->
+                    <li><a href="Attractions.html#art_vr_attractions">VR Attractions</a></li>
+                </ul>
+                <ul id="main_navbar_other"><!-- Contact Us Link -->
+                    <li><a href="contactUs.html">Contact us</a></li>
+                </ul>
+
+                <div id="searchBar"><!-- Search Bar -->
+                    <label for="searchText" >Search the website</label>
+                    <input type="text" id="searchText" />
+                    <button id="search">&#128269; </button>
+                </div>
+            </nav>
+        </header>
+        <div class = "body_grid" id = "index_grid">
+        <main id="main_section" class="bkg_container"> <!-- This block contains the main image and the title of the page -->
+            <figure>
+                <img src="images/home_main.jpg" alt="Photo of Harry, Hermione, Ron and Professor Dumbledore" />
+            </figure>
+            <section>
+                <h1>Enter the magic world of Harry Potter</h1>
+                <h2>Immerse yourself in the magic and, through Augmented and Virtual Reality, live the most unforgettable experience you've ever had</h2>
+                <div id="buy_tickets"  class="find_more"><!--This section would be a link to the Tickets page-->
+                    <h2>Tickets</h2>
+                    <a href="not_found.html">You'd better purchase in advance</a><!-- unimplemented page is redirected to not_found.html -->
+                </div>
+            </section>
+        </main>
+
+        <article id="art_hogwarts_school" class="bkg_container" ><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/hogwarts_castle.jpg" alt="People in Hogwarts castle enjoying virtual reality attractions"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Visit Hogwarts school</h3>
+                </header>
+                <h4>Experience Hogwarts in Augmented Reality like you really were in the movie</h4>
+                <a href="Attractions.html#art_hogwarts_school" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article> 
+        <article id="art_visit_gringott"  class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/gringotts_1.jpg" alt="Interiors of Gringott's bank and Griphook the Goblin"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Visit Gringott's cave</h3>
+                </header>
+                <h4>Enter the sinister twine of tunnels under Gringott's and stare at wonders you've never seen before. All in Virtual Reality</h4>
+                <a href="Attractions.html#art_visit_gringott" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+
+        <aside id="tickets_aside"><!-- This section describes the options available for tickets. They would send to the Tickets page for details-->
+            <header>
+                <h3>Tickets</h3>
+            </header>
+            <ul>
+                <li id="adults" class="">
+                    <h5>Adults</h5>
+                    <a href="not_found.html">Purchase now</a><!-- unimplemented page is redirected to not_found.html -->
+                    <h6>16+ years</h6>
+
+                </li>
+                <li id="0-6_years" class="">
+                    <h5>0-6 years</h5>
+                    <a href="not_found.html">Purchase now</a><!-- unimplemented page is redirected to not_found.html -->
+                    <h6>Accompanied by an adult</h6>
+
+                </li>
+                <li id="kids" class="">
+                    <h5>Kids</h5>
+                    <a href="not_found.html">Purchase now</a><h6>6-15 years, accompanied by an adult</h6><!-- unimplemented page is redirected to not_found.html -->
+
+                </li>
+                <li id="family" class="">
+                    <h5>Family</h5>
+                    <a href="not_found.html">Purchase now</a><h6>2 adults and 2 children </h6><!-- unimplemented page is redirected to not_found.html -->
+
+                </li>
+                <li id="carer" class="">
+                    <h5>Carer</h5>
+                    <a href="not_found.html">Purchase now</a><h6>Contact our Customer Services Team</h6><!-- unimplemented page is redirected to not_found.html -->
+
+                </li>
+                <li id="groups" class="">
+                    <h5>Groups</h5>
+                    <a href="not_found.html">Purchase now</a><!-- unimplemented page is redirected to not_found.html -->
+                    <h6>Contact our Customer Services Team</h6>
+                </li>
+            </ul>
+        </aside>
+        <article id="art_ride_a_broomstick" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/broomstick-hp.jpg" alt="A person enjoying the experience of riding a broomstick in virtual reality"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Ride a broomstick</h3>
+                </header>
+                <a href="Attractions.html#art_ride_a_broomstick" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+
+        </article>
+        <article id="art_forbidden_forest" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/forbidden_forest.jpg" alt="Harry, Hermione and Ron running in the Forbidden Forest"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>The forbidden forest</h3>
+                </header>
+                <a href="Attractions.html#art_forbidden_forest" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+        <article id="art_quidditch_match" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/broomstick.jpg" alt="Harry Potter riding a broomstick in a Quidditch match"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Play a Quidditch match</h3>
+                </header>
+                <a href="Attractions.html#art_quidditch_match" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+        <article id="art_diagon_alley" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/diagon_alley.jpg" alt="Picture of Diagon Alley by night"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Have a walk in Diagon Alley</h3>
+                </header>
+                <a href="Attractions.html#art_diagon_alley" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+        <article id="art_find_the_horcruxes" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/horcruxes.jpg" alt="Characters of Harry Potter after the Horcruxes"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Find the Horcruxes</h3>
+                </header>
+                <a href="Attractions.html#art_find_the_horcruxes" class="find_more">Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+        <article id="art_magical_creatures" class="bkg_container"><!-- This section adverts one of the attractions of the theme park-->
+            <figure>
+                <img src="images/centaur.jpg" alt="Picture of a Centaur"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <header>
+                    <h3>Magical creatures</h3>
+                </header>
+                <a href="Attractions.html#art_magical_creatures" class="find_more" >Find out more</a><!-- link to the appropriate place in Attractions page-->
+            </div>
+        </article>
+        <aside id="plan_your_vacation" class="bkg_container"><!--This section would send to a page where users can plan their long stay in the park -->
+            <figure>
+                <img src="images/plan_your_vacation.jpg" alt="Picture of a sunset"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <h3>Plan your vacation</h3>
+                <a href="not_found.html"s class="find_more">Find out more</a><!-- unimplemented page is redirected to not_found.html -->
+            </div>
+        </aside>
+        <aside id="newsletter" class="bkg_container"><!--This section would send to the newsletter-->
+            <figure>
+                <img src="images/newsletter.jpg" alt="Picture of a library"/>
+            </figure>
+            <div class=" gradient_bkg">
+                <h3>Newsletter</h3>
+                <a href="not_found.html" class="find_more">Find out more</a><!-- unimplemented page is redirected to not_found.html -->
+            </div>
+        </aside>
+
+        <footer id="footer"><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
+            <nav id="footer_navbar" class="navbar"><!-- Secondary navigation bar -->
+                <ul id="fnb_1st">
+                    <li><a href="not_found.html">Where we are</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">How to get here</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">Opening times</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                </ul>
+                <ul id="fnb_2nd">
+                    <li><a href="not_found.html">When you arrive</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">Facilities</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">FAQ</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                </ul>
+                <ul id="fnb_3rd">
+                    <li><a href="contactUs.html">Contact us</a></li><!--  Link to the Contact Us page-->
+                    <li><a href="not_found.html">Partnership (Schools)</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">Private events</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li><a href="not_found.html">Additional needs</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                </ul>
+                <section id="fnb_followus"> <!-- Follow Us section Links to the home pages of the social media pages -->
+                    <h5 id="f_t">Follow us</h5>
+                     <ul id = "lst">
+                        <li id="f_fb"><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64" height="64" alt="Follow us on Facebook" /></a></li>
+                        <li id="f_tt"><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64" width="64" alt="Follow us on Twitter" /></a></li>
+                        <li id="f_ig"><a href="http://www.instagram.com"><img src="images/follow_us_instagram.svg" height="64" width="64" alt="Follow us on Instagram" /></a></li>
+                        <li id="f_yt"><a href="http://www.youtube.com"><img src="images/follow_us_youtube.svg" height="64" width="64" alt="Follow us on Youtube" /></a></li>
+                        <li id="f_ta"><a href="http://www.instagram.com"><img src="images/follow_us_tripadvisor.svg" height="64" width="64" alt="Follow us on TripAdvisor" /></a></li>
+                    </ul>
+                </section>
+                <ul id="fnb_corp">
+                    <li id="pp"><a href="not_found.html">Privacy Policy</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li id=tc><a href="not_found.html">Terms and Conditions</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li id=wu><a href="not_found.html">Work for us</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    </body>
+</html>

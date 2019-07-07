@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+
+/*<common>*/
+/*<header>*/
+#fig_logo{ grid-area: mn_logo; }
+#main_navbar_ar { grid-area: mn_ar; }
+#main_navbar_vr {grid-area: mn_vr; }
+#main_navbar_other { grid-area: mn_other; }
+#searchBar { grid-area: mn_search; }
+#main_navbar { grid-area: navbar;}
+.body_grid { grid-area: bdy_grd;}
+/*<header />*/
+
+/*<main>*/
+#main_section { grid-area: main; }
+/*<main />*/
+
+/*<articles>*/
+#art_vr_attractions { grid-area: art_vr}
+#art_ar_attractions { grid-area: art_ar}
+#art_hogwarts_school { grid-area: art_1; }
+#art_visit_gringott { grid-area: art_2; }
+#tickets_aside { grid-area: tkt; }
+#art_ride_a_broomstick { grid-area: art_3; }
+#art_forbidden_forest { grid-area: art_4; }
+#art_quidditch_match { grid-area: art_5; }
+#art_diagon_alley { grid-area: art_6; }
+#art_find_the_horcruxes { grid-area: art_7; }
+#art_magical_creatures { grid-area: art_8; }
+#art_platform { grid-area: art_9; }
+#art_ministry_of_magic { grid-area: art_10; }
+
+#plan_your_vacation { grid-area: aside_1; }
+#newsletter { grid-area: aside_2; }
+#footer {grid-area: footer}
+/*<articles />*/
+
+/*footer*/
+#fnb_1st { grid-area: fnb_1st; }
+#fnb_2nd { grid-area: fnb_2nd; }
+#fnb_3rd { grid-area: fnb_3rd; }
+#fnb_followus { grid-area: fnb_fus; }
+#fnb_corp { grid-area: fnb_crp; }
+#lst { grid-area: lst_f; }
+
+/*<common />*/
+
+/*<home page>*/
+
+
+/*tickets*/
+#adults { grid-area: adults; }
+#0-6_years { grid-area: years0-6; }
+#kids { grid-area: kids; }
+#family { grid-area: family; }
+#carer { grid-area: carer; }
+#groups { grid-area: groups; }
+
+/*<home page /> */
+
+/*<attractions>*/
+
+#buy_now { grid-area: buy_now; }
+
+/*<attractions />*/
+
+/*<contactUs>*/
+
+#by_post { grid-area: by_post; }
+#by_phone { grid-area: by_phone; }
+#faq { grid-area: faq; }
+#contactForm { grid-area: contactForm; }
+
+/*<contactUs />*/
+
+*{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color:white;
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+input, textarea, select, button{
+    color: orange;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+a{
+    font-size: 1.3em;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    color: orange;
+}
+
+h2{
+    font-size: 2.2em;
+    font-weight: lighter;
+    color: rgb(224,224,224);
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: orange;
+    padding-bottom: 0.5em;
+}
+
+h4{
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: rgb(255,255,255);
+}
+
+h5{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    padding-bottom: 1em;
+}
+h6{
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: rgb(255,255,255);
+}
+
+label{
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+    padding:0em;
+}
+
+main{
+    padding-bottom: 2em;
+}
+
+footer{
+    background-color: rgb(86, 86, 86);
+    width:100%;
+}
+
+footer  ul
+{
+    padding: 1em;
+    /*background-color: #444444;*/
+}
+
+.bkg_container
+{
+    position: relative;
+    overflow: hidden;
+}
+main figure img
+{
+    width: 300%;
+    transform: translate( -25%, 0% );
+}
+
+figure
+{
+    overflow: hidden;
+}
+
+main section /*place the content centered respect to the image*/
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    padding: 2em;
+    background-image: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4),rgba(0,0,0,0));
+}
+
+main section ul{
+    padding-top:2em;
+}
+
+figure img
+{
+    width: 200%;
+    transform: translate( -25%, 0% );
+}
+article
+{
+    padding-bottom: 2em;
+    background: rgba(0,0,0,.3);
+}
+
+article div, aside div
+{
+    position: absolute;
+    top: 0%;
+    overflow: auto;
+    padding: 4em 2em;
+    background-image: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+#buy_tickets{
+    display: none;
+}
+
+#main_navbar nav{
+    display: none;
+    padding: 0em;
+    line-height: 2em;
+    background-color: rgb(86, 86, 86);
+}
+
+#main_navbar > label{
+
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size:2em;
+    color: white;
+    float:right;
+    position: relative;
+}
+#toggle:checked + nav{
+    display: block;
+}
+
+#toggle_label{
+	background-color: rgb(86, 86, 86);
+}
+#toggle {display: none; }
+
+.find_more{
+    display: block;
+    margin-top: 2em;
+    padding:1em;
+    background-color: rgba(255, 140, 0, 0.7);
+}
+#tickets_aside
+{
+    padding-bottom: 1em;
+}
+
+#tickets_aside li{
+    background-color: rgba(255, 140, 0, 0.8);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#tickets_aside ul{
+	padding-top: 2em;
+}
+
+#plan_your_vacation  img,
+#newsletter  img
+{
+    width: 250%;
+}
+
+
+#fnb_followus img{
+    width: 48px;
+    height:48px;
+
+}
+.navbar li{
+    line-height: 2em;
+
+}
+
+#logo{
+    width: 50%;
+    transform: translate( 0%, 0% );
+    padding: 1em;
+    filter: sepia(1) saturate(1000%) hue-rotate(-30deg);
+}
+
+#searchBar{
+    padding: 1em;
+}
+
+/*Contact Us*/
+
+#by_post figure img{
+    filter: invert(90%);
+}
+#contactForm {
+    background-color: rgb(100,100,100);
+    padding: 5%;
+    border-radius: 25px;
+}
+
+/*Attractions*/
+#buy_now {
+    width: 100%;
+}
+
+#footer_navbar{
+        display: grid;
+        grid-template-areas:
+            'fnb_1st fnb_2nd fnb_3rd'
+            'fnb_fus fnb_fus fnb_fus'
+            'fnb_crp fnb_crp fnb_crp';
+        row-gap: 2em;
+}
+#fnb_followus {
+        display: grid;
+        grid-template-areas: 'f_t' 'lst_f';
+        row-gap: 1em;
+}
+#lst {
+        display: grid;
+        grid-template-areas: 'f_fb f_tt' 'f_ig f_yt' '. f_ta';
+        row-gap: 1em;
+}
+#fnb_corp {
+    display: grid;
+    grid-template-areas: 'pp tc wu';
+    row-gap: 1em;
+}
+
+
+.grow, .find_more{ transition: all .2s ease-in-out; }
+.grow:hover,.find_more:hover  { transform: scale(1.05); }
+
+
+@media only screen and (min-width: 800px)
+{
+    #toggle:checked + nav{
+        display: grid;
+    }
+    #logo{
+    width: 80%;
+    transform: translate( 0%, 0% );
+    filter: sepia(1) saturate(1000%) hue-rotate(-30deg);
+    }
+
+    .grid_header_navbar > ul{
+        margin-top: 20%;
+    }
+    
+    body{ font-size: 1.3em;}
+
+    h1{
+        padding-bottom: 2em;
+    }
+
+
+    a{
+        font-size: 1.2em;
+    }
+
+    #lst {
+        display: grid;
+        grid-template-areas: 'f_fb f_tt f_ig f_yt f_ta';
+        row-gap: 1em;
+    }
+   
+
+    #main_navbar > label { display: none; }
+
+
+    .grid_container{
+        display: grid;
+        grid-template-areas:
+        'navbar'
+        'bdy_grd'
+        ;
+        gap: 0em;
+    }
+    #index_grid {
+        display: grid;
+        grid-template-areas:
+        'main main main main main main'
+        'art_1 art_1 art_1 art_2 art_2 art_2'
+        'tkt tkt tkt tkt tkt tkt'
+        'art_3 art_3 art_4 art_4 art_5 art_5'
+        'art_6 art_6 art_7 art_7 art_8 art_8'
+        'aside_1 aside_1 aside_1 aside_2 aside_2 aside_2'
+        'footer footer footer footer footer footer '
+        ;
+        gap: 2em;
+    }
+
+    #main_navbar nav{
+        display: grid;
+        grid-template-columns: 1fr  1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'mn_logo mn_ar mn_vr mn_other mn_search'
+        ;
+    }
+    #main_navbar nav{
+    	line-height: 1em;
+	}
+
+    figure img
+    {
+        width: 100%;
+        transform: translate( 0%, 0% );
+    }
+
+    main figure img
+    {
+        width: 100%;
+        transform: translate( 0%, 0% );
+    }
+    #tickets_aside ul{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+            'adults years0-6 kids family carer groups'
+        ;
+        padding-top: 2em;
+    }
+
+    #fnb_followus img{
+        width: 64px;
+        height: 64px;
+    }
+    main section /*place the content centered respect to the image*/
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 80%;
+        transform: translate( -50%, -50% );
+        padding: 3em;
+        background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.6),rgba(0,0,0,0));
+    }
+
+
+    .find_more{
+        display: inline-block;
+        padding: 0.8em 2em;
+        background-color: darkorange;
+        opacity: 0.8%;
+        width: 10em;
+    }
+    #buy_tickets{
+        display: inline-block;
+        width: 30%
+    }
+
+    #plan_your_vacation  img,
+    #newsletter  img
+    {
+        width: 100%;
+    }
+
+    #grid_container_attractions {
+        display: grid;
+        grid-template-areas:
+                'main main main main main main'
+                'art_vr art_vr art_vr art_vr art_vr art_vr'
+                'art_3 art_3 art_3 art_5 art_5 art_5'
+                'art_2 art_2 art_2 art_7 art_7 art_7'
+                '. . buy_now buy_now . .'
+                'art_ar art_ar art_ar art_ar art_ar art_ar'
+                'art_9 art_9 art_9 art_10 art_10 art_10'
+                'art_4 art_4 art_4 art_8 art_8 art_8'
+                'art_1 art_1 art_1 art_6 art_6 art_6'
+                'footer footer footer footer footer footer ';
+        gap: 2em;
+    }
+
+    #grid_container_contactus
+    {
+        display: grid;
+        grid-template-areas:
+        'main main main main main main'
+        'by_post by_post by_phone by_phone faq faq'
+        'contactForm contactForm contactForm contactForm contactForm contactForm'
+        'footer footer footer footer footer footer '
+        ;
+        gap: 2em;
+    }
+    .grow, .find_more{ transition: all .2s ease-in-out; }
+    .grow:hover,.find_more:hover  { transform: scale(1.1); }
+}

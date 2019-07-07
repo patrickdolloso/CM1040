@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- HTML Meta Data -->
+    <title>Harry Potter theme park - Page not found</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Harry Potter themed park where you can experience amazing interaction with the magic world of wizardry through Virtual Reality and Augmented Reality" />
+    <meta name="keywords" content="Harry Potter, Theme Park, Wizardry, Magic, Fantasy, Virtual Reality, Augmented Reality" />
+    <meta name="author" content="UoL - Web Development Course - w1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet_grid.css">
+</head>
+<body>
+    <header id="main_navbar"><!-- The header contains the logo, the main navigation bar and the search bar -->
+            <label id="toggle_label" for="toggle">&#9776;</label>   
+            <input type="checkbox" id="toggle" />
+            <nav class="grid_header_navbar"><!-- The main navigation bar. All the links to attractions bring to the attraction page, anchored in different places
+                    Note that the "service" links, the last 5, do not land anywhere -->
+                <figure id="fig_logo"><!-- The logo -->
+                    <a href="index.html">
+                        <img id="logo" src="images/HP_ThemePark_logo.png" alt="Harry Potter Theme Park Logo"/>
+                    </a>
+                </figure>
+                <ul id="main_navbar_ar"><!-- The AR Attractions Link -->
+                    <li><a href="Attractions.html#art_ar_attractions">AR Attractions</a></li>
+                </ul>
+                <ul id="main_navbar_vr"><!-- The VR Attractions Link -->
+                    <li><a href="Attractions.html#art_vr_attractions">VR Attractions</a></li>
+                </ul>
+                <ul id="main_navbar_other"><!-- The Contact Us Link -->
+                    <li><a href="contactUs.html">Contact us</a></li>
+                </ul>
+                <div id="searchBar"><!-- Search Bar -->
+                    <label for="searchText" >Search the website</label>
+                    <input type="text" id="searchText" />
+                    <button id="search">&#128269; </button>
+                </div>
+            </nav>
+</header>
+<main class="bkg_container"><!-- This block contains the main image and the title of the page -->
+    <figure>
+        <img src="images/home_main.jpg" alt="Photo of Harry, Hermione, Ron and Professor Dumbledore" />
+    </figure>
+    <!--            <div style="opacity: 0.5; background-image: linear-gradient(red, yellow);"></div>-->
+    <section class=" gradient_bkg">
+        <h1>Sorry, the page you are after does not exist</h1>
+        <h2>Please visit one of the implemented pages, listed below</h2>
+        <ul>
+            <li><a href="index.html">Link to the Home page</a></li><!-- redirect the page to the index.html  page -->
+            <li><a href="Attractions.html">Link to the page Attractions</a> </li><!-- redirect the page to the Attractions.html  page -->
+            <li><a href="contactUs.html">Link to the page Contact us</a> </li><!-- redirect the page to the contactus.html  page -->
+        </ul>
+    </section>
+
+</main>
+<footer id="footer"><!-- footer of the page containing the footer navbar, the Follow us section and other links-->
+    <nav id="footer_navbar" class="navbar"><!-- Secondary navigation bar -->
+        <ul id="fnb_1st">
+            <li><a href="not_found.html">Where we are</a></li><!-- unimplemented pages are redirected to not_found.html -->
+            <li><a href="not_found.html">How to get here</a></li><!-- unimplemented pages are redirected to not_found.html -->
+            <li><a href="not_found.html">Opening times</a></li><!-- unimplemented pages are redirected to not_found.html -->
+        </ul>
+        <ul id="fnb_2nd">
+            <li><a href="not_found.html">When you arrive</a></li>
+            <li><a href="not_found.html">Facilities</a></li><!-- unimplemented pages are redirected to not_found.html -->
+            <li><a href="not_found.html">FAQ</a></li><!-- unimplemented pages are redirected to not_found.html -->
+        </ul>
+        <ul id="fnb_3rd">
+            <li><a href="contactUs.html">Contact us</a></li>
+            <li><a href="not_found.html">Partnership (Schools)</a></li><!-- unimplemented pages are redirected to not_found.html -->
+            <li><a href="not_found.html">Private events</a></li><!-- unimplemented pages are redirected to not_found.html -->
+            <li><a href="not_found.html">Additional needs</a></li><!-- unimplemented pages are redirected to not_found.html -->
+        </ul>
+                <section id="fnb_followus"> <!-- Follow Us section Links to the home pages of the social media pages -->
+                    <h5 id="f_t">Follow us</h5>
+                     <ul id = "lst">
+                        <li id="f_fb"><a href="http://www.facebook.com"><img src="images/follow_us_facebook.svg" width="64" height="64" alt="Follow us on Facebook" /></a></li>
+                        <li id="f_tt"><a href="http://www.twitter.com"><img src="images/follow_us_twitter.svg" height="64" width="64" alt="Follow us on Twitter" /></a></li>
+                        <li id="f_ig"><a href="http://www.instagram.com"><img src="images/follow_us_instagram.svg" height="64" width="64" alt="Follow us on Instagram" /></a></li>
+                        <li id="f_yt"><a href="http://www.youtube.com"><img src="images/follow_us_youtube.svg" height="64" width="64" alt="Follow us on Youtube" /></a></li>
+                        <li id="f_ta"><a href="http://www.instagram.com"><img src="images/follow_us_tripadvisor.svg" height="64" width="64" alt="Follow us on TripAdvisor" /></a></li>
+                    </ul>
+        </section>
+        <ul id="fnb_corp">
+                    <li id="pp"><a href="not_found.html">Privacy Policy</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li id=tc><a href="not_found.html">Terms and Conditions</a></li><!-- unimplemented pages are redirected to not_found.html -->
+                    <li id=wu><a href="not_found.html">Work for us</a></li><!-- unimplemented pages are redirected to not_found.html -->
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
